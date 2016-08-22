@@ -1,0 +1,74 @@
+/*
+package com.app.test;
+
+import java.util.*;
+
+
+*/
+/**
+ * User: lb on 2016/7/14.
+ * Date:2016-07-14-13:45
+ * desc：
+ *//*
+
+public class ListSort {
+
+
+    public static List expandList(List<Gold> goldList) {
+        List<Gold> goldList2 = new ArrayList<Gold>();
+        for (Gold gold : goldList) {
+            gold.setSortTime(gold.getCreateTime());
+
+            if (gold.getStatus() != 0) {
+                Gold newIt = new Gold(gold.getMoney(), gold.getCreateTime(), gold.getUseTime(), gold.getExpiredTime(), gold.getStatus(), gold.getTitle());
+                switch (newIt.getStatus()) {
+                    case 1:
+                        newIt.setSortTime(newIt.getUseTime());
+                    case 2:
+                        newIt.setSortTime(newIt.getExpiredTime());
+                }
+                goldList2.add(0, newIt);
+            }
+        }
+        goldList.addAll(goldList2);
+        return goldList;
+    }
+
+
+    public static void main(String[] args) throws Exception {
+
+
+        List<Gold> goldList = new ArrayList<Gold>();
+        Gold gold1 = new Gold(1000, "2016-06-29 16:54:47", "2016-07-05 11:32:31", "2016-09-15 00:00:00", 0, "360注册发放");
+        Gold gold2 = new Gold(1, "2016-06-28 16:54:23", "2016-07-04 15:48:02", "2016-07-04 00:00:00", 2, "注册发放");
+        Gold gold3 = new Gold(1000, "2016-06-29 16:54:49", "2016-07-05 11:32:31", "2016-09-15 00:00:00", 1, "ceshi注册发放");
+        goldList.add(gold1);
+        goldList.add(gold2);
+        goldList.add(gold3);
+
+
+        expandList(goldList);
+        Collections.sort(goldList, new Comparator() {
+
+            public int compare(Object object1, Object object2) {// 实现接口中的方法
+                Gold p1 = (Gold) object1; // 强制转换
+                Gold p2 = (Gold) object2;
+                java.sql.Timestamp ts1 = java.sql.Timestamp.valueOf(p1.getSortTime());
+                java.sql.Timestamp ts2 = java.sql.Timestamp.valueOf(p2.getSortTime());
+
+                long tsTime1 = ts1.getTime();
+                long tsTime2 = ts2.getTime();
+
+                return tsTime1 > tsTime2 ? 1 : -1;
+            }
+        });
+
+        Iterator its = goldList.iterator(); // 得到迭代器，用于遍历list中的所有元素
+        while (its.hasNext()) {// 如果迭代器中有元素，则返回true
+            System.out.println("\t" + its.next());// 显示该元素
+        }
+
+    }
+}
+
+*/

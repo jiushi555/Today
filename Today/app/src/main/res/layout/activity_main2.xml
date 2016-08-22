@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:id="@+id/drawer_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FCFCFC"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/nav_header_main"></include>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+
+            </View>
+
+            <xml.org.today.widget.RippleView
+                android:id="@+id/mian_content_ly"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                ripple:rv_type="rectangle"
+                ripple:rv_zoom="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_person_24dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="我的发布" />
+            </xml.org.today.widget.RippleView>
+
+            <xml.org.today.widget.RippleView
+                android:id="@+id/mian_message_layout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                ripple:rv_type="rectangle"
+                ripple:rv_zoom="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_mail_24dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="我的消息" />
+                <TextView
+                    android:id="@+id/mian_message_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/notive_bg"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="10sp"/>
+            </xml.org.today.widget.RippleView>
+
+            <xml.org.today.widget.RippleView
+                android:id="@+id/mian_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                ripple:rv_type="rectangle"
+                ripple:rv_zoom="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_assignment_24dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="日历  " />
+            </xml.org.today.widget.RippleView>
+
+            <xml.org.today.widget.RippleView
+                android:id="@+id/mian_set_layout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                ripple:rv_type="rectangle"
+                ripple:rv_zoom="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_menu_manage" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="设置  " />
+                <TextView
+                    android:id="@+id/mian_set_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/notive_bg"
+                    android:text="new"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="10sp"
+                    android:visibility="gone"/>
+            </xml.org.today.widget.RippleView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+
+            </View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_ff">
+
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:textColor="#5B5B5B"
+                android:layout_marginLeft="15dp"
+                android:text="社会化"/>
+            <xml.org.today.widget.RippleView
+                android:id="@+id/mian_share_layout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                ripple:rv_type="rectangle"
+                ripple:rv_zoom="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_menu_share" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="分享" />
+            </xml.org.today.widget.RippleView>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.v4.widget.DrawerLayout>

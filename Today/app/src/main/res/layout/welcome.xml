@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/welcome_title"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dip"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/logo_welcome"/>
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:layout_below="@id/welcome_title"
+        android:text="分享今天事"
+        android:textSize="20sp"/>-->
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:background="@mipmap/welcome_title"
+        android:layout_below="@id/welcome_title"/>
+</RelativeLayout>

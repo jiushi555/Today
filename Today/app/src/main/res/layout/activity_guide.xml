@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide_viewpage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="185dp"
+            android:layout_height="76dp"
+            android:src="@mipmap/logo_"
+            android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50.0dip"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/point" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_go_login"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/guide_btn_bg"
+                android:text="登录"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_go_register"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/btn_go_login"
+                android:background="@drawable/guide_btn_bg"
+                android:text="注册"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

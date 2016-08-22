@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mg_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="0.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13.5dip"
+        android:orientation="horizontal"
+        android:padding="0.0dip" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:padding="0.0dip" >
+
+            <ImageView
+                android:id="@+id/mg_tx"
+                android:layout_width="37.5dip"
+                android:layout_height="37.5dip"
+                android:src="@mipmap/ic_portrait" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.0dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1.5dip"
+                android:layout_marginTop="15.5dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/comment_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="姚建勋"
+                    android:textColor="#ff3c8ed4"
+                    android:textSize="15.0dip" />
+                <TextView
+                    android:id="@+id/commment_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13.0dip"
+                    android:layout_below="@id/comment_username"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="一小时前提问"
+                    android:textColor="@color/colorGray"
+                    android:textSize="13.5dip" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/commment_card"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="0.0dip" >
+
+
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48.0dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="4.5dip"
+            android:clipChildren="true"
+            android:orientation="vertical"
+            android:padding="0.0dip" >
+
+            <TextView
+                android:id="@+id/comment_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="0.0dip"
+                android:paddingTop="5dip"
+                android:text="我就  及及就及基金就i及及一自己就是 我  一测我就是这样的"
+                android:textColor="#ff505050"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="7dip"
+        android:padding="0.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/rl_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13.5dip"
+            android:clickable="true" >
+
+            <View
+                android:id="@+id/base"
+                android:layout_width="1.0dip"
+                android:layout_height="1.0dip"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

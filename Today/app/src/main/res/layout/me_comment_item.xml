@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingRight="20dp" >
+
+
+    <View
+        android:id="@+id/view_0"
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="71dp"
+        android:background="#A6A6A6" />
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="71dp"
+        android:background="#A6A6A6" />
+
+    <TextView
+        android:id="@+id/mecomment_time_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_1"
+        android:text="26"
+        android:layout_marginLeft="12dp"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/mecomment_time_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_1"
+        android:text="7月"
+        android:layout_toRightOf="@id/mecomment_time_day"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/mycontent_image"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/view_1"
+        android:layout_marginLeft="65dp"
+        android:src="@drawable/timeline_green" />
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="1dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/mycontent_image"
+        android:layout_marginLeft="71dp"
+        android:background="#A6A6A6" />
+    <TextView
+        android:id="@+id/me_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1231"
+        android:layout_alignBottom="@+id/mecomment_time_month"
+        android:layout_toRightOf="@+id/mycontent_image"
+        android:layout_toEndOf="@+id/mycontent_image" />
+    <RelativeLayout
+        android:id="@+id/mecontent_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/me_comment"
+        android:layout_toRightOf="@+id/mycontent_image"
+        android:layout_marginTop="10dp"
+        android:minHeight="100dp"
+        android:background="@color/color_ff"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/mecontent_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxEms="7"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="测试数据"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

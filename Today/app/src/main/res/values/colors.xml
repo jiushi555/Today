@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorMain">#ff772d</color>
+    <color name="white">#ffffff</color>
+    <color name="colorTextBtnOn">#f3e1c8</color>
+    <color name="colorTopBar">#fda52b</color>
+    <color name="colorTextTitle">#ff2d2d2d</color>
+    <color name="colorGray">#BEBEBE</color>
+    <color name="primary_text_material_dark">#b14747</color>
+    <color name="text_title">#ff2d2d2d</color>
+    <color name="line">#ffeeeeee</color>
+    <color name="res_cor1011">#ff999999</color>
+    <color name="black">#000000</color>
+    <color name="btm">#88000000</color>
+    <color name="btm2">#aa000000</color>
+    <color name="btm3">#55000000</color>
+    <color name="btm4">#33000000</color>
+    <color name="color_ff">#F0F0F0</color>
+    <color name="color_00">#8A000000</color>
+</resources>
